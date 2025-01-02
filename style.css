@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-um: #F5F5F5;
+    --cor-dois: #d9d9d9;
+    --cor-tres: #464646;
+    --cor-quatro: #000000;
+
+    --fonte-titulo_grande: "Jacques Francois Shadow", serif;
+    --fonte-titulo_e_texto: "Raleway", serif;
+}
+
+body, html {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+}
+
+.retangulo {
+    background-color: var(--cor-dois);
+    height: 85vh;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo__retangulo {
+    font-family: var(--fonte-titulo_grande);
+    font-weight: 400;
+    font-size: 6vw;
+    color: var(--cor-quatro);
+    margin: 0;
+    text-align: center;
+}
+
+.navbar {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--cor-dois);
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: var(--cor-quatro);
+    font-family: var(--fonte-titulo_e_texto);
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.navbar a:hover {
+    color: var(--cor-tres);
+}
+
+.menu__direito :hover {
+    color: var(--cor-tres);
+}
+
+.retangulo__imagens {
+    position: absolute;
+    top: 44.5rem;
+    left: 90%;
+    transform: translateX(-50%);
+    width: 7.5rem;
+    cursor: pointer;
+}
+
+.sobre__mim {
+    margin: 15% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sobre__mim__titulo {
+    font-family: var(--fonte-titulo_e_texto);
+    margin-bottom: 5rem;
+    font-weight: bold;
+    font-size: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre__mim__container {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    align-items: flex-start;
+    text-decoration: none;
+}
+
+.sobre__mim__subtitulo {
+    font-family: var(--fonte-titulo_e_texto);
+    color: var(--cor-quatro);
+    font-weight: medium;
+    font-size: 3.25rem;
+}
+
+.sobre__mim__paragrafo {
+    font-family: var(--fonte-titulo_e_texto);
+    color: var(--cor-tres);
+    font-weight: medium;
+    font-size: 1.37rem;
+}
+
+.sobre__mim__links {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.sobre__mim__links__texto {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-family: var(--fonte-titulo_e_texto);
+    color: var(--cor-quatro);
+    font-size: 1.37rem;
+    font-weight: medium;
+}
+
+.sobre__mim__imagens__links {
+    display: flex;
+    flex-direction: row;
+    height: 15px;
+    width: 15px;
+}
+
+.sobre__mim__subtitulo__2 {
+    font-family: var(--fonte-titulo_e_texto);
+    color: var(--cor-quatro);
+    font-weight: medium;
+    font-size: 2rem;
+}
+
+.sobre__mim__paragrafo__2 {
+    font-family: var(--fonte-titulo_e_texto);
+    color: var(--cor-tres);
+    font-weight: medium;
+    font-size: 1rem;
+}
+
+.sobre__mim__imagens {
+    width: 40%;
+    height: 800px;
+}
+
+.skills {
+    width: 50%;
+    margin: 15% 5%;
+    text-align: center;
+}
+
+.skills__titulo {
+    text-align: center;
+    font-family: var(--fonte-titulo_e_texto);
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 5rem;
+}
+
+.skills__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem 0.5rem;
+    justify-items: center;
+}
+  
+.skills__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.skills__imagens {
+    width: 200px;
+    height: auto;
+}
+  
+.skills__paragrafo {
+    font-family: var(--fonte-titulo_e_texto);
+    color: var(--cor-tres);
+    font-size: 1.5rem;
+    font-weight: medium;
+    margin-top: 2rem;
+}
+
+.skills__hobbies__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skills, .hobbies {
+    width: 50%; 
+    text-align: center;
+}
+
+.separador {
+    width: 2px;
+    background-color: var(--cor-quatro);
+    height: 60rem;
+    margin-top: 10rem;
+}
+
+.hobbies {
+    width: 50%;
+    margin: 15% 5%;
+    text-align: center;
+}
+
+.hobbies__titulo {
+    text-align: center;
+    font-family: var(--fonte-titulo_e_texto);
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 5rem;
+}
+
+.hobbies__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem 0.5rem;
+    justify-items: center;
+}
+  
+.hobbies__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.hobbies__imagens {
+    width: 200px;
+    height: auto;
+}
+  
+.hobbies__paragrafo {
+    font-family: var(--fonte-titulo_e_texto);
+    color: var(--cor-tres);
+    font-size: 1.5rem;
+    font-weight: medium;
+    margin-top: 2rem;
+}
+
+.formacao {
+    margin: 15% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formacao__titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-titulo_e_texto);
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.formacao__item {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 6rem;
+}
+
+.formacao__texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.formacao__subtitulo {
+    font-family: var(--fonte-titulo_e_texto);
+    color: var(--cor-quatro);
+    font-size: 2rem;
+    font-weight: medium;
+    margin-bottom: 0.5rem;
+}
+
+.formacao__paragrafo {
+    font-family: var(--fonte-titulo_e_texto);
+    color: var(--cor-tres);
+    font-size: 1.5rem;
+    font-weight: light;
+    margin-bottom: 0;
+}
+
+.formacao__imagens {
+    width: 311px;
+    height: 162px;
+}
+
+.experiencia {
+    margin: 15% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experiencia__titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-titulo_e_texto);
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.experiencia__item {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 6rem;
+}
+
+.experiencia__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experiencia__subtitulo {
+    font-family: var(--fonte-titulo_e_texto);
+    color: var(--cor-quatro);
+    font-size: 2rem;
+    font-weight: medium;
+}
+
+.experiencia__paragrafo {
+    font-family: var(--fonte-titulo_e_texto);
+    color: var(--cor-tres);
+    font-size: 1.5rem;
+    font-weight: light;
+    margin: 0;
+}
+
+.experiencia__texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.experiencia__botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.experiencia__botao__1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 181px;
+    height: 98px;
+    border: 2px solid var(--cor-quatro);
+    text-decoration: none;
+    font-family: var(--fonte-titulo_e_texto);
+    font-size: 1.5rem;
+    font-weight: medium;
+    border-radius: 15px;
+    background-color: transparent;
+    color: var(--cor-quatro);
+    cursor: pointer;
+}
+
+.experiencia__botao__2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 181px;
+    height: 98px;
+    border: 2px solid var(--cor-quatro);
+    text-decoration: none;
+    font-family: var(--fonte-titulo_e_texto);
+    font-size: 1.5rem;
+    font-weight: medium;
+    border-radius: 15px;
+    background-color: var(--cor-dois);
+    color: var(--cor-quatro);
+    cursor: pointer;
+}
+
+.experiencia__botao__1:hover {
+    background-color: var(--cor-um);
+}
+
+.experiencia__botao__2:hover {
+    background-color: var(--cor-um);
+}
+
+.contato {
+    margin: 0;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato__container {
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato__titulo {
+    text-align: center;
+    font-family: var(--fonte-titulo_e_texto);
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.contato__paragrafo {
+    text-align: flex-start;
+    margin-bottom: 2.5rem;
+    font-family: var(--fonte-titulo_e_texto);
+    font-size: 1rem;
+    color: var(--cor-tres);
+}
+.contato__formulario {
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.contato__formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0;
+}
+
+.contato__formulario label {
+    font-size: 1rem;
+    font-family: var(--fonte-titulo_e_texto);
+    color: var(--cor-tres);
+}
+
+.contato__formulario input,
+.contato__formulario textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--cor-dois);
+    border-radius: 5px;
+    font-family: var(--fonte-titulo_e_texto);
+}
+
+.contato__formulario textarea {
+    resize: none;
+}
+
+.contato__formulario button {
+    margin-top: 2rem;
+    padding: 0.8rem;
+    width: 165px;
+    height: 51px;
+    font-size: 1rem;
+    font-family: var(--fonte-titulo_e_texto);
+    background-color: var(--cor-dois);
+    color: var(--cor-quatro);
+    border: 1px solid var(--cor-quatro);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.contato__formulario button:hover {
+    background-color: var(--cor-um);
+}
+
+.rodape {
+    padding: 24px;
+    background-color: var(--cor-dois);
+    text-align: center;
+    color: var(--cor-tres);
+    font-family: var(--fonte-titulo_e_texto);
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.rodape__link {
+    text-decoration: none;
+    color: var(--cor-tres);
+}
