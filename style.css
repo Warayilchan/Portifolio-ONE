@@ -504,3 +504,181 @@ header {
     text-decoration: none;
     color: var(--cor-tres);
 }
+
+@media (max-width: 768px) {
+    .retangulo {
+        height: 80vh;
+    }
+
+    .titulo__retangulo {
+        font-size: 3rem;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0.5rem; 
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .navbar a {
+        font-size: 0.6rem; 
+        margin: 0;
+    }
+
+    .menu__direito {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0.8rem;
+    }
+
+    .retangulo__imagens {
+        position: absolute;
+        top: 37rem;
+        left: 80%;
+        transform: translateX(-50%);
+        width: 7.5rem;
+    }
+
+    .sobre__mim {
+        margin: 45% 5%;
+    }
+
+    .sobre__mim__titulo {
+        margin-bottom: 2rem;
+    }
+
+    .sobre__mim__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .sobre__mim br {
+        display: none;
+    }
+
+    .sobre__mim__subtitulo {
+        word-wrap: break-word;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .sobre__mim__paragrafo {
+        font-size: 0.9rem;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .sobre__mim__links {
+        gap: 20px;
+    }
+
+    .sobre__mim__subtitulo__2 {
+        font-size: 1.5rem;
+    }
+
+    .sobre__mim__paragrafo__2 {
+        font-size: 0.9rem;
+    }
+
+    .sobre__mim__imagens {
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    .skills__hobbies__container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .separador {
+        display: none;
+    }
+
+    .skills {
+        width: 100%;
+        margin: 15% 5%;
+    }
+
+    .skills__imagens {
+        width: 150px;
+        height: auto;
+    }
+
+    .hobbies {
+        width: 100%;
+        margin: 15% 5%;
+    }
+
+    .hobbies__imagens {
+        width: 150px;
+        height: auto;
+    }
+
+    .formacao__titulo {
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .formacao__item {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .formacao__texto {
+        text-align: center;
+    }
+
+    .experiencia__titulo {
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .experiencia__item {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .experiencia__conteudo {
+        text-align: center;
+    }
+
+    .experiencia__imagens {
+        width: 400px;
+    }
+
+    .experiencia__botoes {
+        gap: 25px;
+    }
+
+    .experiencia__botao__1 {
+        width: 150px;
+        height: 78px;
+    }
+
+    .experiencia__botao__2 {
+        width: 150px;
+        height: 78px;
+    }
+
+    .contato__container {
+        width: 95%;
+        text-align: center;
+    }
+
+    .contato__formulario {
+        text-align: start;
+        width: 80%;
+        margin-left: 0;
+        box-sizing: border-box;
+    }
+}
