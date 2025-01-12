@@ -535,7 +535,7 @@ header {
 
     .retangulo__imagens {
         position: absolute;
-        top: 37rem;
+        top: 36.5rem;
         left: 80%;
         transform: translateX(-50%);
         width: 7.5rem;
